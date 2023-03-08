@@ -3,17 +3,24 @@
 //
 #include <iostream>
 
-// Define printInterrupt()
-void printInterrupt()
+// Define mainInterrupt()
+void mainInterrupt()
 {
-    std::cout << "This is within printInterrupt()\n";
+    std::cout << "This is within mainInterrupt()\n";
+}
+
+// Define altInterrupt()
+void altInterrupt()
+{
+    std::cout << "This is within altInterrupt()\n";
 }
 
 // Define main()
 int main()
 {
     std::cout << "Starting main()\n";
-    printInterrupt();
+    mainInterrupt();
+    altInterrupt();
     std::cout << "Ending main()\n";
 
     return 0;
