@@ -4,6 +4,4 @@ project(LearnCPP)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(LearnCPP
-        "Section 2/Part 11/introHeader.cpp"
-        "Section 2/Part 11/introHeaderFunc.h"
-        "Section 2/Part 11/introHeaderFunc.cpp")
+        "Section 2/Quiz/Question 3/main.cpp" "Section 2/Quiz/Question 3/io.h")

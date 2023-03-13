@@ -1,0 +1,26 @@
+//
+// Created by RetroHazard on 2023/03/13.
+//
+#include <iostream>
+
+int readNumber()
+{
+    int x;
+    std::cout << "Enter a number: ";
+    std::cin >> x;
+    return x;
+}
+
+void writeNumber(int num)
+{
+    std::cout << "Your numbers equal to " << num << '\n';
+}
+
+int main()
+{
+    std::cout << "Please enter inputs when prompted: \n";
+    int x {readNumber()};
+    int y {readNumber()};
+    writeNumber(x + y);
+    return 0;
+}
