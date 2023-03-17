@@ -1,0 +1,14 @@
+Question 1
+    a)  + Operator functions from L->R
+        x = ((3 + 4) + 5)
+
+    b)  = Operator functions from R->L
+        (x = (y = z))
+
+    c)  ++ is highest priority, R->L
+        + is second highest priority, R->L
+        z *= ((++y) +5)
+
+    d)  && is highest priority, L->R
+        || is next priority, L->R
+        (a || (b && c)) || d
