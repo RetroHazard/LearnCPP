@@ -1,0 +1,6 @@
+What does the following expression evaluate to? 6 + 5 * 4 % 3
+
+(6 + ((5 * 4) % 3))
+5 * 4 = 20
+20 % 3 = 2
+6 + 2 = 8
