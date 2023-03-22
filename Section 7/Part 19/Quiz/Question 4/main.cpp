@@ -42,9 +42,25 @@ bool playRematch() {
     }
 }
 
+int playerGuess(int turnNum, int low, int high)
+{
+    int guessNum;
+    bool validNum {false};
+    while (validNum == false){
+        std::cout << "Guess #" << turnNum << ": ";
+        std::cin >> guessNum;
+        if ((guessNum > high) || (guessNum < low)) {
+            std::cout << "Sorry, this number is not valid for this session, try again.\n";
+        }
+        else
+            validNum = true;
+    }
+    return guessNum;
+}
+
 void playGame() {
-    int lowRange{1};
-    int highRange{100};
+    constexpr int lowRange{1};
+    constexpr int highRange{100};
     int winningNum{rollForNum(lowRange, highRange)};
 
     int guessNum;
@@ -57,8 +73,7 @@ void playGame() {
 
     while (playerHasTurns(playerTurn, maxTurns)) {
         for (; playerTurn <= maxTurns; playerTurn++) {
-            std::cout << "Guess #" << playerTurn << ": ";
-            std::cin >> guessNum;
+            guessNum = playerGuess(playerTurn, lowRange, highRange);
             if (guessNum == winningNum) {
                 std::cout << "Correct! You Win!\n";
                 return;
