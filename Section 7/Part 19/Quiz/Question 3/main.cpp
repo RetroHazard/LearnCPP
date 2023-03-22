@@ -40,17 +40,16 @@ bool playerHasTurns(int playerTurn, int maxTurns)
         return true;
 }
 
-// Program does not error on incorrect inputs yet
-bool promptRematch() {
-    char playerResponse {};
-    std::cout << "Would you like to play again (y/n)? ";
-    while (playerResponse != ('y' | 'n')) {
+bool playRematch() {
+    while (true) {
+        char playerResponse {};
+        std::cout << "Would you like to play again (y/n)? ";
         std::cin >> playerResponse;
-        if (playerResponse == 'y') {
-            return true;
-        }
-        else if (playerResponse == 'n') {
-            return false;
+        switch (playerResponse) {
+            case 'y':
+                return true;
+            case 'n':
+                return false;
         }
     }
 }
@@ -60,9 +59,10 @@ void playGame() {
     int highRange{100};
     int winningNum{rollForNum(lowRange, highRange)};
 
-    int guessInt;
+    int guessNum;
     int playerTurn{1};
-    int maxTurns{7};
+    constexpr int maxTurns{7};
+    std::cout << "======================\n";
     std::cout << "Let's play a game.\n";
     std::cout << "I'm thinking of a number between " << lowRange << " and " << highRange << ".\n";
     std::cout << "You have " << maxTurns << " tries to guess what it is.\n";
@@ -70,13 +70,13 @@ void playGame() {
     while (playerHasTurns(playerTurn, maxTurns)) {
         for (; playerTurn <= maxTurns; playerTurn++) {
             std::cout << "Guess #" << playerTurn << ": ";
-            std::cin >> guessInt;
-            if (guessInt == winningNum) {
+            std::cin >> guessNum;
+            if (guessNum == winningNum) {
                 std::cout << "Correct! You Win!\n";
                 return;
-            } else if (guessInt < winningNum) {
+            } else if (guessNum < winningNum) {
                 std::cout << "Your guess is too low.\n";
-            } else if (guessInt > winningNum) {
+            } else if (guessNum > winningNum) {
                 std::cout << "Your guess is too high.\n";
             }
         }
@@ -89,10 +89,10 @@ void playGame() {
 
 int main()
 {
-    bool continuePlay{true};
-    while (continuePlay){
+    do {
         playGame();
-        continuePlay = promptRematch();
     }
+    while (playRematch());
+
     return 0;
 }
