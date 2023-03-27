@@ -9,6 +9,11 @@
 #include <iostream>
 
 // write your add function template here
+template<typename T>
+T add(T x, T y)
+{
+    return x + y;
+}
 
 int main()
 {
