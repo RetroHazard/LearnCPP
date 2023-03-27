@@ -1,0 +1,16 @@
+https://www.learncpp.com/cpp-tutorial/chapter-8-summary-and-quiz/
+Question #4
+What is the output of this program and why?
+
+See webpage for Code Sample
+==================================================================
+
+1
+2
+1
+2
+
+count(1) instantiates a function from the template for type int, returns 1
+count(1) uses the same function, c is static and was incremented in the previous call, returns 2
+count(2.3) instantiates a new function using the template for type double, returns 1
+count<double>(1) uses the same function, c is static and was incremented in the previous call, returns 2
