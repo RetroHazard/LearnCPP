@@ -1,0 +1,22 @@
+https://www.learncpp.com/cpp-tutorial/chapter-8-summary-and-quiz/
+Question #3
+==================================================================
+a) See webpage for Code Sample:
+
+    The program will output:
+    int 5
+
+    s is of type short and will be promoted to int as preferred by the compiler.
+
+
+b) See webpage for Code Sample:
+
+    Conflict between print() and print(int x=0)
+    Calling print() in main() is ambiguous and the compiler will not
+    be able to determine which overload to use.
+
+
+c) See webpage for Code Sample:
+
+    Ambiguous function, both long and double would require conversion.
+    Compiler will not know how to determine which conversion to use.
