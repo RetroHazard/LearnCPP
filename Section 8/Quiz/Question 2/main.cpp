@@ -12,7 +12,10 @@ namespace constants
     inline constexpr double pi { 3.14159 };
 }
 
-double convertToRadians(double degrees)
+using Degs = double;
+using Rads = double;
+
+Rads convertToRadians(Degs degrees)
 {
     return degrees * constants::pi / 180;
 }
@@ -20,10 +23,10 @@ double convertToRadians(double degrees)
 int main()
 {
     std::cout << "Enter a number of degrees: ";
-    double degrees{};
+    Degs degrees{};
     std::cin >> degrees;
 
-    double radians { convertToRadians(degrees) };
+    Rads radians { convertToRadians(degrees) };
     std::cout << degrees << " degrees is " << radians << " radians.\n";
 
     return 0;
