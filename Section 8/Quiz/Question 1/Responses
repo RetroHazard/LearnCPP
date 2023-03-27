@@ -1,0 +1,31 @@
+https://www.learncpp.com/cpp-tutorial/chapter-8-summary-and-quiz/
+Question #1
+What type of conversion happens in each of the following cases?
+Valid answers are:
+    No conversion needed,
+    numeric promotion,
+    numeric conversion,
+    won’t compile due to narrowing conversion.
+
+Assume int and long are both 4 bytes.
+==================================================================
+
+a) No Conversion
+
+b) Numeric Promotion (char -> int)
+
+c) Compile Error (Narrowing Conversion)
+
+d) Numeric Promotion (bool -> int)
+
+e) Numeric Conversion (double -> int, explicit)
+
+f) Numeric Promotion (float -> double)
+
+g) Numeric Promotion (int -> double)
+
+h) Numeric Conversion (int -> long)
+
+i) Compile Error (Narrowing Conversion)
+
+j) No Conversion
