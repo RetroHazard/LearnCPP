@@ -10,6 +10,10 @@
 #include <iostream>
 
 // write your sub function template here
+auto sub(auto x, auto y)
+{
+    return x - y;
+}
 
 int main()
 {
