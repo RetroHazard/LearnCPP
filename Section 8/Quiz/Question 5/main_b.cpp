@@ -12,6 +12,11 @@
 #include <iostream>
 
 // write your mult function template here
+template<typename T>
+T mult(T x, int y)
+{
+    return x * y;
+}
 
 int main()
 {
