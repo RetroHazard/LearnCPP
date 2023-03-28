@@ -20,18 +20,31 @@ Question #1
 Question #2
     What is the output of this program?
 
-    6 7
+    7 6
+    [Explanation]
+        Remember, references cannot be reseated, so ref = y does not
+        make ref a reference to y. It assigns the value of y to the
+        object ref is referring to (which is x).
 
 
 Question #3
     Name two reasons why we prefer to pass arguments by const reference
     instead of by non-const reference whenever possible.
 
-
+    [Answer]
+        1. A non-const reference parameter can be used to modify the value
+        of the argument. If we do not need this ability, it’s better
+        to pass by const reference so that we don’t accidentally modify
+        the argument.
+        2. A non-const reference parameter can only accept a modifiable
+        lvalue as an argument. A const reference-parameter can accept a
+        modifiable lvalue, a non-modifiable lvalue, or an rvalue as an
+        argument.
 
 
 Question #4
     What is the difference between a const pointer and a pointer-to-const?
 
     a const pointer cannot be changed to point at a new memory address
-    a pointer-to-const is pointing at a const variable, but can be retargeted.
+    a pointer-to-const is pointing at a const object, and thus the value
+    of the object cannot be changed through the pointer.
