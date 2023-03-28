@@ -1,0 +1,41 @@
+https://www.learncpp.com/cpp-tutorial/null-pointers/
+
+Question #1
+    Can we determine whether a pointer is a null pointer or not? If so, how?
+    a)  Yes, pointers can directly convert to bool and be used for conditional statements
+
+    Can we determine whether a non-null pointer is valid or dangling? If so, how?
+    b)  No, a dangling pointer is still pointing at a memory address, even if the
+        data found there is no longer valid for the defined purpose.
+
+
+Question #2
+For each subitem, answer “yes”, “no”, or “possibly” to whether the action
+described will result in undefined behavior (immediately).
+If the answer is “possibly”, clarify when.
+
+    Assigning a new address to a pointer
+    a)  No
+
+    Assigning nullptr to a pointer
+    b)  No
+
+    Dereferencing a pointer to a valid object
+    c)  No
+
+    Dereferencing a dangling pointer
+    d)  Yes
+
+    Dereferencing a null pointer
+    e)  Yes
+
+    Dereferencing a non-null pointer
+    f)  Possibly, if the non-null pointer is dangling.
+
+
+Question #3
+Why should we set pointers that aren’t pointing to a valid object to ‘nullptr’?
+
+    It's important to (re)set pointers to 'nullptr' if they are not pointing to
+    a valid object, to prevent unintended behaviour which can be caused by
+    dereferencing a dangling pointer.
