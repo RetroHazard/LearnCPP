@@ -1,0 +1,37 @@
+https://www.learncpp.com/cpp-tutorial/chapter-9-summary-and-quiz/
+See web page for any code samples
+=================================================================
+
+Question #1
+    For each of the following expressions on the right side of operator <<,
+    indicate whether the expression is an lvalue or rvalue:
+
+    a) rvalue
+
+    b) lvalue
+
+    c) rvalue
+
+    d) rvalue
+
+    e) lvalue
+
+
+Question #2
+    What is the output of this program?
+
+    6 7
+
+
+Question #3
+    Name two reasons why we prefer to pass arguments by const reference
+    instead of by non-const reference whenever possible.
+
+
+
+
+Question #4
+    What is the difference between a const pointer and a pointer-to-const?
+
+    a const pointer cannot be changed to point at a new memory address
+    a pointer-to-const is pointing at a const variable, but can be retargeted.
