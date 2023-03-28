@@ -7,20 +7,20 @@ Assume a short is 2 bytes, and a 32-bit machine.
 
 &value  =   0012FF60
 value   =   7
-ptr     =   7
-*ptr    =   0012FF60
+ptr     =   0012FF60
+*ptr    =   7
 
 &value  =   0012FF60
 value   =   9
-ptr     =   9
-*ptr    =   0012FF60
+ptr     =   0012FF60
+*ptr    =   9
 
 &otherValue =   0012FF54
 otherValue  =   3
-ptr         =   3
-*ptr        =   0012FF54
+ptr         =   0012FF54
+*ptr        =   3
 
-sizeof(ptr) =   2
+sizeof(ptr) =   4
 sizeof(*ptr)=   2
 
 ===========
