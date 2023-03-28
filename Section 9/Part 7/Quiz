@@ -39,3 +39,14 @@ Why should we set pointers that aren’t pointing to a valid object to ‘nullpt
     It's important to (re)set pointers to 'nullptr' if they are not pointing to
     a valid object, to prevent unintended behaviour which can be caused by
     dereferencing a dangling pointer.
+
+    (Additional Explanation from LearnCPP.com)
+    We can not determine whether a non-null pointer is valid or dangling,
+    and accessing a dangling pointer will result in undefined behavior.
+    Therefore, we need to ensure that we do not have any dangling
+    pointers in our program.
+
+    If we ensure all pointers are either pointing to valid objects or
+    set to nullptr, then we can use a conditional to test for null to
+    ensure we don’t dereference a null pointer, and assume all non-null
+    pointers are pointing to valid objects.
