@@ -23,6 +23,14 @@ ptr         =   0012FF54
 sizeof(ptr) =   4
 sizeof(*ptr)=   2
 
+[From the Solution Notes]
+A short explanation about the 4 and the 2.
+A 32-bit machine means that pointers will be 32 bits in length,
+but sizeof() always prints the size in bytes. 3
+2 bits is 4 bytes. Thus the sizeof(ptr) is 4.
+Because ptr is a pointer to a short, *ptr is a short.
+The size of a short in this example is 2 bytes. Thus the sizeof(*ptr) is 2.
+
 ===========
 
 Question #2
