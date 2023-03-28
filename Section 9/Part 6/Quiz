@@ -1,0 +1,32 @@
+https://www.learncpp.com/cpp-tutorial/introduction-to-pointers/
+See webpage for Code Samples
+
+Question #1
+What values does this program print?
+Assume a short is 2 bytes, and a 32-bit machine.
+
+&value  =   0012FF60
+value   =   7
+ptr     =   7
+*ptr    =   0012FF60
+
+&value  =   0012FF60
+value   =   9
+ptr     =   9
+*ptr    =   0012FF60
+
+&otherValue =   0012FF54
+otherValue  =   3
+ptr         =   3
+*ptr        =   0012FF54
+
+sizeof(ptr) =   2
+sizeof(*ptr)=   2
+
+===========
+
+Question #2
+What’s wrong with this snippet of code?
+
+Line 3 attempts to retrieve the value of the pointer (int) and overwrite
+it with a memory address (&value), unable to assign mem. addr. to int type.
