@@ -4,7 +4,10 @@ Question #1
 
     a)  True
 
-    b)  False
+    b)  True
+            Enumerators not explicitly assigned a value will be implicitly
+            assigned the integer value of the previous enumerator + 1.
+            If there is no previous enumerator, the enumerator will assume value 0.
 
     c)  False
 
