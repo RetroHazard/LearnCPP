@@ -1,0 +1,8 @@
+https://www.learncpp.com/cpp-tutorial/struct-passing-and-miscellany/
+
+In the solution to Question 2, why does getFraction() return by value
+instead of by reference?
+
+    Because the variable contained within will go out of scope
+    when the function completes. Because of this we need to pass
+    the return value using reference.
