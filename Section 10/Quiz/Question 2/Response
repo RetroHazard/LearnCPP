@@ -20,7 +20,7 @@ You can assume the function that takes these types as parameters doesn’t modif
 
 
     e) An enumerated type
-        Passed by constant reference
+        Passed by value
 
 
     f) (See Code Sample on webpage)
@@ -36,4 +36,4 @@ You can assume the function that takes these types as parameters doesn’t modif
 
 
     i) std::string_view
-        Passed by constant reference
+        Passed by value
