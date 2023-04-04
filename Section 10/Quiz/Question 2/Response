@@ -1,0 +1,39 @@
+https://www.learncpp.com/cpp-tutorial/chapter-10-summary-and-quiz/
+
+Specify whether objects of each of the given types should be passed by value, const address, or const reference.
+You can assume the function that takes these types as parameters doesn’t modify them.
+
+    a) char
+        Passed by value
+
+
+    b) std::string
+        Passed by const reference
+
+
+    c) unsigned long
+        Passed by value
+
+
+    d) bool
+        Passed by value
+
+
+    e) An enumerated type
+        Passed by constant reference
+
+
+    f) (See Code Sample on webpage)
+        Passed by constant reference
+
+
+    g) (See Code Sample on webpage)
+        Passed by constant reference
+
+
+    h) an object whose address is held in an int*
+        Passed by constant address
+
+
+    i) std::string_view
+        Passed by constant reference
