@@ -1,0 +1,19 @@
+https://www.learncpp.com/cpp-tutorial/using-a-language-reference/
+
+Question #1
+What does the following program print? Don’t run it, use a reference to figure out what erase does.
+(See webpage for code sample)
+
+str.erase(4,11);
+    https://en.cppreference.com/w/cpp/string/basic_string/erase
+    1) Removes std::min(count, size() - index) characters starting at index.
+
+Result:
+    std::string str{ "The rice is cooking" };
+    str.erase(4, 11);
+    std::cout << str << '\n';
+
+    Will print:
+        The king
+
+        Begin erase at char 4 (r), size is 11, final removed character is the second o
