@@ -1,0 +1,4 @@
+https://www.learncpp.com/cpp-tutorial/sorting-an-array-using-selection-sort/
+Objective:
+Manually show how selection sort works on the following array: { 30, 60, 20, 50, 40, 10 }.
+Show the array after each swap that takes place.
