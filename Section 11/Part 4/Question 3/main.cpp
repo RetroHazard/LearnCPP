@@ -16,6 +16,27 @@
  * Write code that bubble sorts the following array according to the rules above:
  * Print the sorted array elements at the end of your program.
  */
-
+#include <iostream>
 
 int array[]{ 6, 3, 2, 9, 7, 1, 5, 4, 8 };
+
+int main()
+{
+    constexpr int arraySize{static_cast<int>(std::size(array))};
+    for (int index = 0; index < arraySize - 1; index++)
+    {
+        for (int nextIndex = 0; nextIndex < arraySize - index - 1 ; nextIndex++)
+        {
+            if (array[nextIndex] > array[nextIndex + 1])
+                std::swap(array[nextIndex], array[nextIndex + 1]);
+        }
+    }
+
+    for (int index = 0; index < arraySize; index++)
+    {
+        std::cout << array[index] << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}

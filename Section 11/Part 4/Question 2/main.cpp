@@ -28,7 +28,7 @@ int main()
         for (int currentIndex{ startIndex + 1 }; currentIndex < length; ++currentIndex)
         {
             // If we've found an element that is smaller than our previously found smallest
-            if (array[currentIndex] < array[smallestIndex])
+            if (array[currentIndex] > array[smallestIndex]) // Flip the operator
                 // then keep track of it
                 smallestIndex = currentIndex;
         }

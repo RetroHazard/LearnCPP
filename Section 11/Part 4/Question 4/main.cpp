@@ -25,10 +25,21 @@ int main()
     constexpr int arraySize{static_cast<int>(std::size(array))};
     for (int index = 0; index < arraySize - 1; index++)
     {
+        bool isSwapped{ false };
+
         for (int nextIndex = 0; nextIndex < arraySize - index - 1 ; nextIndex++)
         {
             if (array[nextIndex] > array[nextIndex + 1])
+            {
                 std::swap(array[nextIndex], array[nextIndex + 1]);
+                isSwapped = true;
+            }
+        }
+
+        if (isSwapped == false)
+        {
+            std::cout << "Early termination on iteration: " << index + 1 << '\n';
+            break;
         }
     }
 
