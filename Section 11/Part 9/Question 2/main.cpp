@@ -12,6 +12,14 @@
 #include <iostream>
 #include <iterator>
 
+int* findValue(int* rangeStart, int* rangeEnd, int value) {
+    for (int* ptr{ rangeStart }; ptr != rangeEnd ; ++ptr) {
+        if (*ptr == value)
+            return ptr;
+    }
+    return rangeEnd;
+}
+
 // ...
 
 int main()

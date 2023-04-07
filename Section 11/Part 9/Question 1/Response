@@ -4,3 +4,5 @@ Question 1:
     Why does the following code work?
     (See code sample on webpage)
 
+Because of the way in which the subscript operator works, these can be flipped
+It's not recommended to use this syntax.
