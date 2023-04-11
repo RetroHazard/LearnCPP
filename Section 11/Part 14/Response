@@ -1,0 +1,9 @@
+https://www.learncpp.com/cpp-tutorial/void-pointers/
+Questions:
+
+1)  What’s the difference between a void pointer and a null pointer?
+
+        void pointer -  A void pointer can be made to point at objects of any type.
+                        Void pointers do not know what type they are, and require special casting in order to dereference.
+
+        null pointer -  A null pointer is a pointer object that points to nothing, or more specifically, an address of 0.
