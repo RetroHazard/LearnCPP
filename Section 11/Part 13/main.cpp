@@ -8,3 +8,40 @@
  * Ask the user to enter a name.
  * Use a for each loop to see if the name the user entered is in the array.
  */
+#include <iostream>
+
+const std::string_view listNames[8]{
+        "Alex",
+        "Betty",
+        "Caroline",
+        "Dave",
+        "Emily",
+        "Fred",
+        "Greg",
+        "Holly"
+};
+
+void checkName(std::string_view input)
+{
+    bool isFound{false};
+
+    for (auto name : listNames)
+    {
+        if (name == input)
+        {
+            isFound = true;
+            break;
+        }
+    }
+    std::cout << input << (isFound ? " was found.\n" : " was not found.\n");
+}
+
+int main()
+{
+    std::cout << "Enter a name: ";
+    std::string name{};
+    std::cin >> name;
+    checkName(name);
+
+    return 0;
+}
