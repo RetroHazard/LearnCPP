@@ -4,4 +4,4 @@ project(LearnCPP)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(LearnCPP
-     "Section 11/Part 18/Examples/iterators_2.cpp")
+     "Section 11/Part 19/Examples/std_sort.cpp")
