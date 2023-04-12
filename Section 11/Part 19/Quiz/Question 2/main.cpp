@@ -11,3 +11,65 @@
  *  Once the user has entered all the names and grade pairs, sort the list by grade (highest first).
  *  Then print all the names and grades in sorted order.
  */
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+struct Students
+{
+    std::string name{};
+    int grade{};
+};
+
+int getNumberOfStudents()
+{
+    int numberOfStudents{};
+
+    std::cout << "How many students to enter? ";
+    std::cin >> numberOfStudents;
+    std::cout << std::endl;
+
+    return numberOfStudents;
+}
+
+std::vector<Students> getStudents()
+{
+    using Students = std::vector<Students>;
+
+    int numberOfStudents{ getNumberOfStudents() };
+
+    Students students(static_cast<Students::size_type>(numberOfStudents));
+
+    int count{1 };
+
+    for (auto& student : students)
+    {
+        std::cout << "Enter name of student #" << count << ": ";
+        std::cin >> student.name;
+        std::cout << "Enter grade for " << student.name << ": ";
+        std::cin >> student.grade;
+        std::cout << std::endl;
+
+        ++count;
+    }
+    return students;
+}
+
+bool compareStudents(const Students& a, const Students& b)
+{
+    return (a.grade > b.grade);
+}
+
+int main()
+{
+    auto students{ getStudents() };
+    std::sort(students.begin(), students.end(), compareStudents);
+
+    for (const auto& student : students)
+    {
+        std::cout << student.name << " received a grade of " << student.grade << '\n';
+    }
+
+    return 0;
+}
