@@ -16,7 +16,7 @@ void swapValues(int& a, int& b)
     temp = b;
     b = a;
     a = temp;
-};
+}
 
 int main()
 {

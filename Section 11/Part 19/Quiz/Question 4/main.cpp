@@ -8,3 +8,23 @@
  *  Stop when you hit the null terminator.
  *  Write a main function that tests the function with the string literal “Hello, world!”.
  */
+#include <iostream>
+#include <iterator>
+
+void printByChar(char* input)
+{
+    auto stringLen (std::strlen(input));
+    //std::cout << stringLen;
+    for (int i = 0; i < stringLen; ++i, *input++) {
+        std::cout << *input;
+    }
+}
+
+int main()
+{
+    char cString[]{ "Hello, world!" };
+
+    printByChar(cString);
+
+    return 0;
+}
