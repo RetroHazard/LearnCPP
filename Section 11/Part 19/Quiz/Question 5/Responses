@@ -19,4 +19,4 @@ d)
 
 e)
     Line 4 // Cannot initialize int* to a double value.
-    Line 4 // Change int* to double*? Static cast to int?
+    Line 4 // Change int* to double*
