@@ -13,10 +13,19 @@
 
 void printByChar(char* input)
 {
+/*
     auto stringLen (std::strlen(input));
     //std::cout << stringLen;
     for (int i = 0; i < stringLen; ++i, *input++) {
         std::cout << *input;
+    }
+*/
+
+    //Alternate Code from Solution
+    while (*input != '\0')
+    {
+        std::cout << *input;
+        ++input;
     }
 }
 
