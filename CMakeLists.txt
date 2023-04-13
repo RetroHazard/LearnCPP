@@ -4,4 +4,4 @@ project(LearnCPP)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(LearnCPP
-        "/Users/abracken/Library/Application Support/JetBrains/CLion2023.1/scratches/scratch.cpp")
+      "Section 11/Part 19/Quiz/Question 6/main.cpp" "Section 11/Part 19/Quiz/Question 6/cards.h")
