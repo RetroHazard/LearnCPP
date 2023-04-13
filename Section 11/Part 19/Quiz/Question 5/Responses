@@ -1,17 +1,22 @@
 https://www.learncpp.com/cpp-tutorial/chapter-11-comprehensive-quiz/
 See webpage for Code Samples
 
-
 a)
-
+    Line 7 // array[count] is mismatched and goes out of range.
+    Line 5 // Change the run condition in the for loop from '<=' to '<'.
 
 b)
-
+    Line 8 // *ptr is constant and cannot be reassigned.
+    Line 6 // Change *ptr to non-constant.
 
 c)
-
+    Line 11 // Array decays to a pointer.
+    Find length of array as part of function and iterate using a normal for loop.
 
 d)
-
+    Line 3 // 'length' is not a compile time constant and cannot be used to initialize
+    Line 4 // Can't return pointer to temp since temp will go out of scope.
 
 e)
+    Line 4 // Cannot initialize int* to a double value.
+    Line 4 // Change int* to double*? Static cast to int?
